@@ -24,9 +24,9 @@ class _MySplashScreenState extends State<MySplashScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text("SP17-BCS-029",style: TextStyle(fontSize: 30,color: Colors.white),) ,
+          Text("SP17-BCS-089",style: TextStyle(fontSize: 30,color: Colors.white),) ,
           SizedBox( height: 30.0),
-          Text("Muhammad Adnan Ikram",style: TextStyle(fontSize: 30,color: Colors.white),) ,
+          Text("Hafiz Usama Hsn",style: TextStyle(fontSize: 30,color: Colors.white),) ,
           SizedBox( height: 30.0),
           CircularProfileAvatar(
 

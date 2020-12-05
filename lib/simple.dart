@@ -90,3 +90,70 @@ class _simpleState extends State<simple> {
     }
   }
 }
+import 'package:flutter/material.dart';
+import 'dart:math';	import 'dart:math';
+import 'package:alert_dialog/alert_dialog.dart';	import 'package:alert_dialog/alert_dialog.dart';
+import 'package:circular_profile_avatar/circular_profile_avatar.dart';	import 'main_page.dart';
+int left_dice=1;
+int right_dice=1;
+int left_count=0;
+int right_count=0;
+String winer=null;
+class simple extends StatefulWidget {	class simple extends StatefulWidget {
+@override	  @override
+_simpleState createState() => _simpleState();	  _simpleState createState() => _simpleState();
+}	}
+
+class _simpleState extends State<simple> {	class _simpleState extends State<simple> {
+int left_dice=1;
+int right_dice=1;
+int left_count;
+int right_count;
+String winer=null;
+@override	  @override
+Widget build(BuildContext context) {	  Widget build(BuildContext context) {
+return Container(	    return Scaffold(
+color: Colors.grey,	      body: Container(
+color: Colors.grey,
+child: Column(	        child: Column(
+mainAxisAlignment: MainAxisAlignment.center,	          mainAxisAlignment: MainAxisAlignment.center,
+children: [	          children: [
+@@ -37,8 +37,8 @@ class _simpleState extends State<simple> {
+, child: Image(	                    , child: Image(
+image: AssetImage('images/dice$left_dice.jpg'),	                      image: AssetImage('images/dice$left_dice.jpg'),
+),	                    ),
+),
+),	                  ),
+),
+Expanded(	                Expanded(
+child: FlatButton(onPressed: (){	                  child: FlatButton(onPressed: (){
+setState(() {	                    setState(() {
+@@ -49,8 +49,8 @@ class _simpleState extends State<simple> {
+, child: Image(	                    , child: Image(
+image: AssetImage('images/dice$right_dice.jpg'),	                      image: AssetImage('images/dice$right_dice.jpg'),
+),	                    ),
+),
+),	                  ),
+),
+],	              ],
+),	            ),
+Container(	            Container(
+@@ -74,7 +74,18 @@ class _simpleState extends State<simple> {
+),	            ),
+],	          ],
+),	        ),
+),
+floatingActionButton:FloatingActionButton(
+onPressed: (){
+setState(() {
+Navigator.push(context, MaterialPageRoute(builder: (context)=>main_page()));
+});
+},
+child: Icon(Icons.keyboard_return_rounded),
+backgroundColor: Colors.black,
+)
+);	    );
+
+}	  }
+void Check()	  void Check()
+{	  {
