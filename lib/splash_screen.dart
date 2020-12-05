@@ -19,14 +19,14 @@ class _MySplashScreenState extends State<MySplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Colors.cyan,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text("SP17-BCS-089",style: TextStyle(fontSize: 30,color: Colors.white),) ,
+          Text("SP17-BCS-029",style: TextStyle(fontSize: 30,color: Colors.white),) ,
           SizedBox( height: 30.0),
-          Text("M YOUSAF",style: TextStyle(fontSize: 30,color: Colors.white),) ,
+          Text("Muhammad Adnan Ikram",style: TextStyle(fontSize: 30,color: Colors.white),) ,
           SizedBox( height: 30.0),
           CircularProfileAvatar(
 
@@ -35,7 +35,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
           ),
           ),
           SizedBox( height: 30.0),
-          SpinKitRipple(color: Colors.red, size: 150.0, borderWidth: 10.0,),
+          SpinKitRipple(color: Colors.redAccent, size: 150.0, borderWidth: 10.0,),
         ],
       ),
     );
