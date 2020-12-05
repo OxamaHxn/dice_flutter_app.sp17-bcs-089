@@ -1,6 +1,8 @@
 import 'package:dicee/page1.dart';
 import 'package:dicee/page2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'splash_Screen.dart';
 
 void main() {
   runApp(MaterialApp(
